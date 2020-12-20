@@ -15,12 +15,12 @@
                  ;; off with the kafka version.
                  ;; See https://docs.confluent.io/current/release-notes.html
 
-                 [io.confluent/kafka-schema-registry-client "6.0.0"
+                 [io.confluent/kafka-schema-registry-client "6.0.1"
                   :exclusions [com.fasterxml.jackson.core/jackson-databind]]
-                 [io.confluent/kafka-avro-serializer "6.0.0"]
-                 [org.apache.kafka/kafka-clients "2.6.0"]
-                 [org.apache.kafka/kafka-streams "2.6.0"]
-                 [org.apache.kafka/kafka-streams-test-utils "2.6.0"]
+                 [io.confluent/kafka-avro-serializer "6.0.1"]
+                 [org.apache.kafka/kafka-clients "2.7.0"]
+                 [org.apache.kafka/kafka-streams "2.7.0"]
+                 [org.apache.kafka/kafka-streams-test-utils "2.7.0"]
                  [org.clojure/clojure "1.10.1" :scope "provided"]
                  [org.clojure/data.json "1.0.0"]
                  [org.clojure/data.fressian "1.0.0"]
@@ -70,11 +70,11 @@
               :resource-paths ["test/resources"]
               :injections [(require 'io.aviso.logging.setup)]
               :dependencies [[io.aviso/logging "0.3.2"]
-                             [org.apache.kafka/kafka-streams-test-utils "2.6.0"]
-                             [org.apache.kafka/kafka-clients "2.6.0" :classifier "test"]
+                             [org.apache.kafka/kafka-streams-test-utils "2.7.0"]
+                             [org.apache.kafka/kafka-clients "2.7.0" :classifier "test"]
                              [org.clojure/test.check "1.1.0"]
                              [org.apache.kafka/kafka_2.11 "2.4.1"]
-                             [lambdaisland/kaocha "1.0.700"]
+                             [lambdaisland/kaocha "1.0.732"]
                              [lambdaisland/kaocha-cloverage "1.0.75"]
                              [lambdaisland/kaocha-junit-xml "0.0.76"]]}
 

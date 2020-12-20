@@ -129,7 +129,9 @@
 
     (s/def ::debit-account-name string?)
     (s/def ::credit-account-name string?)
-    (s/def ::amount pos-int?))
+    (s/def ::amount pos-int?)
+
+    )
 
 
   (do
